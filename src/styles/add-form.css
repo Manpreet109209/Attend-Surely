@@ -1,0 +1,172 @@
+/* ============================================================================
+   ADD SUBJECT FORM COMPONENT STYLES
+   ============================================================================ */
+
+.add-subject-form {
+  background-color: #ffffff;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-6);
+  max-width: 42rem;
+}
+
+@media (min-width: 640px) {
+  .add-subject-form {
+    padding: var(--spacing-8);
+  }
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: var(--spacing-6);
+}
+
+.form-group:last-of-type {
+  margin-bottom: var(--spacing-8);
+}
+
+.form-group label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-slate-700);
+  margin-bottom: var(--spacing-2);
+}
+
+.form-group.required label::after {
+  content: ' *';
+  color: var(--color-danger);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: var(--spacing-2) var(--spacing-4);
+  border: 1px solid var(--color-slate-300);
+  border-radius: var(--radius-lg);
+  background-color: #ffffff;
+  color: var(--color-slate-900);
+  font-family: inherit;
+  font-size: var(--font-size-base);
+  transition: all var(--transition-base);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--color-slate-400);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--color-slate-50),
+              0 0 0 4px var(--color-primary);
+}
+
+/* Three-column form grid */
+.form-grid-three {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-6);
+}
+
+@media (min-width: 640px) {
+  .form-grid-three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.form-grid-three .form-group {
+  margin-bottom: 0;
+}
+
+/* Subject name input */
+.form-group-subject {
+  margin-bottom: var(--spacing-6);
+}
+
+/* Attendance rate preview box */
+.attendance-preview {
+  background-color: var(--color-blue-50);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-3) var(--spacing-4);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-blue-700);
+}
+
+.attendance-preview.empty {
+  font-size: var(--font-size-xs);
+  color: var(--color-blue-600);
+}
+
+/* Form hint */
+.form-hint {
+  font-size: var(--font-size-xs);
+  color: var(--color-slate-500);
+  margin-top: var(--spacing-2);
+  display: block;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-6);
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-weight: var(--font-weight-medium);
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  transition: background-color var(--transition-base),
+              box-shadow var(--transition-base),
+              opacity var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: var(--color-primary-dark);
+  box-shadow: var(--shadow-lg);
+}
+
+.submit-btn:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Loading state spinner */
+.submit-btn-spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.submit-btn-icon {
+  font-size: var(--font-size-lg);
+}
+
+/* Form wrapper for centering */
+.form-wrapper {
+  max-width: 42rem;
+  margin: 0 auto;
+}
