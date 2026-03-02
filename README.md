@@ -1,38 +1,81 @@
-# React + Vite
+AttendSure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AttendSure is a responsive React web application designed to help users manage and track attendance efficiently. The project is currently under active development and will continue to evolve with additional features and backend integration.
 
-Currently, two official plugins are available:
+🚀 Project Status
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is ongoing.
+The current version is a functional frontend MVP with local data persistence. Future updates will include authentication, backend integration, and database support.
 
-## React Compiler
+🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React (Vite)
 
-## Project Setup
+JavaScript (ES6+)
 
-This project uses React with Vite and TailwindCSS for styling. It also depends on the `uuid` package to generate unique IDs for subjects.
+CSS (Modular structure with Flexbox & Grid)
 
-To install all required dependencies and setup Tailwind, run:
+Local Storage for temporary data persistence
 
-```bash
+Git & GitHub for version control
+
+✨ Current Features
+
+Responsive and modern UI
+
+Modular CSS architecture
+
+Local data storage using browser localStorage
+
+Clean component structure
+
+Optimized Vite development setup
+
+📂 Project Structure
+src/
+ ├── components/
+ ├── pages/
+      ├── Dashboard.jsx
+      ├── Landing.jsx
+ ├── styles/
+ │    ├── global.css
+ │    ├── (component-specific CSS files)
+ ├── App.jsx
+ ├── main.jsx
+📦 Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/Manpreet109209/Attend-Surely.git
+
+Navigate into the project folder:
+
+cd Attend-Surely
+
+Install dependencies:
+
 npm install
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-npm install uuid
-```
 
-> If `npx tailwindcss init -p` fails for any reason, the repository already contains a `tailwind.config.js` and `postcss.config.js` that you can use.
+Run development server:
 
-The development server can then be started with:
-
-```bash
 npm run dev
-```
 
+The app will run locally on the Vite development server.
 
-## Expanding the ESLint configuration
+🔄 Upcoming Improvements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Backend integration (Node.js + Express)
+
+Database support (MongoDB)
+
+User authentication & authorization
+
+Production deployment
+
+UI/UX refinements
+
+Performance optimization
+
+🎯 Long-Term Goal
+
+The goal of AttendSure is to evolve from a frontend MVP into a fully functional full-stack attendance management system suitable for real-world use cases.
