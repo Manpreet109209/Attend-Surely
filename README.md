@@ -1,4 +1,5 @@
-Demo live link https://attend-surely.vercel.app/ 
+Demo live link https://attend-surely.vercel.app/
+
 AttendSure
 
 AttendSure is a responsive React web application designed to help users manage and track attendance efficiently. The project is currently under active development and will continue to evolve with additional features and backend integration.
